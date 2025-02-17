@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's House</title>
+    <link rel="icon" href="coin.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #262626;
+            color: white;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        header img {
+            width: 250px;
+            /* Tamanho da imagem ajustado para 250px */
+            height: 250px;
+            position: absolute;
+            top: 0.5;
+            left: 5px;
+            /* Posiciona a imagem no canto superior esquerdo */
+        }
+
+        header h1 {
+            margin-left: 750px;
+            /* Ajusta o título para não sobrepor a imagem */
+            font-size: 2.5em;
+            /* Aumenta o tamanho do título */
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+            /* Isso vai alinhar todos os produtos centralizados */
+        }
+
+        .produto img {
+            width: 100%;
+            /* A largura das imagens ocupa 100% do espaço disponível dentro da célula */
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Isso alinha os itens do produto no centro */
+            justify-content: space-between;
+            /* Isso distribui o conteúdo dentro do box de maneira uniforme */
+            max-width: 280px;
+            /* Limita o tamanho do produto */
+        }
+
+        .produto h3 {
+            color: #333;
+            margin: 10px 0;
+            font-size: 1.2em;
+            /* Ajustei o tamanho do título */
+        }
+
+        .produto p {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .produto .preco {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .produto button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            /* O botão agora ocupa toda a largura da célula */
+        }
+
+        .produto button:hover {
+            background-color: #2980b9;
+        }
+
+        .categoria {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+
+        .categoria h2 {
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="coin.png" alt="Ícone Gamer's House">
+        <h1>Bem-vindo à Gamer's House</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Consoles -->
+    <div class="categoria">
+        <h2>Consoles</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="https://cdn.awsli.com.br/2500x2500/1417/1417526/produto/56091928/console-ps4-fat-500gb-preto-f1-r0s5f5gnxx.jpg"
+                    alt="Console PS4">
+                <h3>Console PS4</h3>
+                <p>Console PlayStation 4 com 1TB de armazenamento!</p>
+                <div class="preco">R$ 2.099,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://m.media-amazon.com/images/I/51pNvD-nsvL.jpg"
+                    alt="Xbox Series X">
+                <h3>Xbox Series X</h3>
+                <p>Console Xbox Series X com gráficos 4K e carregamento ultra rápido.</p>
+                <div class="preco">R$ 2.599,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="categoria">
+        <h2>Controles</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY41T4qqof9K2Z9-1GgGevLQ_6xZpM7b8Fv_JZmk3Ckrj1LBHdxXNm7Q&s" alt="Controle Xbox Wireless">
+                <h3>Controle Xbox Wireless</h3>
+                <p>Controle sem fio para Xbox com design confortável e ótima resposta.</p>
+                <div class="preco">R$ 349,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+    
+            <!-- Gamepad Logitech F310 -->
+            <div class="produto">
+                <img src="controle logitech.png" alt="Gamepad Logitech F310">
+                <h3>Gamepad Logitech F310</h3>
+                <p>Gamepad ergonômico da Logitech para uma jogabilidade mais precisa.</p>
+                <div class="preco">R$ 159,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+    
+            <!-- Controle Wireless PS4 (agora ao lado do Gamepad) -->
+            <div class="produto">
+                <img src="controle ps4.png">
+                <h3>Controle Wireless PS4</h3>
+                <p>Controle sem fio para Playstation com design confortável e ótima resposta.</p>
+                <div class="preco">R$ 249,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Jogos -->
+    <div class="categoria">
+        <h2>Jogos</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="https://webfones.vtexassets.com/arquivos/ids/244450/jogo-ps4-ghost-of-tsushima-versao-do-diretor-sony-1.jpg?v=638663175571370000"
+                    alt="Jogo para PS4">
+                <h3>GHOST OF TSUSHIMA - PS4</h3>
+                <p>Um jogo para você que admira os samurais e a cultura japonesa.</p>
+                <div class="preco">R$ 199,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="Design sem nome.png"
+                    alt="Call of Duty PS5">
+                <h3>Call of Duty Black Ops 6 - PS5</h3>
+                <p>O clássico jogo de tiro, agora melhorado para PS5!</p>
+                <div class="preco">R$ 249,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Periféricos -->
+    <div class="categoria">
+        <h2>Periféricos</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="https://ae01.alicdn.com/kf/S2197cda3ea2a4cab8c8c407f9cac3925o.jpg"
+                    alt="Mouse Attack Shark R1">
+                <h3>Mouse Attack Shark R1</h3>
+                <p>Mouse gamer Attack Shark R1 com design ergonômico e alta precisão.</p>
+                <div class="preco">R$ 149,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nOV02cB7dR8fDbSREmcd43c6RpH50eq7MYmu2Mhj21Xtk_QYPn44RpQ&s"
+                    alt="Headset Logitech G Pro X">
+                <h3>Headset Logitech G Pro X</h3>
+                <p>Headset gamer com som imersivo e microfone de alta qualidade para streams e jogos online.</p>
+                <div class="preco">R$ 899,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpt2JJtm68bdsjsm1rr29XZpEdxDFP7kVK9l4F_74tOdT1lo4akgCKgA&s"
+                    alt="Teclado Razer Huntsman">
+                <h3>Teclado Mecânico Razer Huntsman</h3>
+                <p>Teclado mecânico com switches opto-mecânicos, ideal para gamers.</p>
+                <div class="preco">R$ 1.299,99</div>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
