@@ -41,6 +41,37 @@
             /* Aumenta o tamanho do título */
         }
 
+        /* Barra de pesquisa */
+        .search-container {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-container button:hover {
+            background-color: #2980b9;
+        }
+
         nav {
             background-color: #444;
             overflow: hidden;
@@ -143,6 +174,12 @@
     <header>
         <img src="coin.png" alt="Ícone Gamer's House">
         <h1>Bem-vindo à Gamer's House</h1>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar produtos...">
+            <button>Buscar</button>
+        </div>
     </header>
 
     <nav>
